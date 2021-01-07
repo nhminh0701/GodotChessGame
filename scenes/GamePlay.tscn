@@ -1,0 +1,270 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/Pieces/BlackPawn.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/GamePlay.gd" type="Script" id=2]
+[ext_resource path="res://scenes/Pieces/BlackRook.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Marker.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/MarkerController.gd" type="Script" id=5]
+[ext_resource path="res://scenes/Pieces/BlackKnight.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Pieces/BlackBishop.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Pieces/BlackQueen.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Pieces/BlackKing.tscn" type="PackedScene" id=9]
+
+[node name="GamePlay" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Board" type="TileMap" parent="."]
+cell_tile_origin = 1
+format = 1
+
+[node name="MarkerController" type="Node2D" parent="."]
+position = Vector2( 32, 32 )
+script = ExtResource( 5 )
+
+[node name="Marker" parent="MarkerController" instance=ExtResource( 4 )]
+
+[node name="Marker2" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 0 )
+
+[node name="Marker3" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 0 )
+
+[node name="Marker4" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 0 )
+
+[node name="Marker5" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 0 )
+
+[node name="Marker6" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 0 )
+
+[node name="Marker7" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 0 )
+
+[node name="Marker8" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 0 )
+
+[node name="Marker16" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 64 )
+
+[node name="Marker15" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 64 )
+
+[node name="Marker14" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 64 )
+
+[node name="Marker13" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 64 )
+
+[node name="Marker12" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 64 )
+
+[node name="Marker11" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 64 )
+
+[node name="Marker10" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 64 )
+
+[node name="Marker9" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 64 )
+
+[node name="Marker24" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 128 )
+
+[node name="Marker23" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 128 )
+
+[node name="Marker22" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 128 )
+
+[node name="Marker21" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 128 )
+
+[node name="Marker20" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 128 )
+
+[node name="Marker19" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 128 )
+
+[node name="Marker18" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 128 )
+
+[node name="Marker17" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 128 )
+
+[node name="Marker32" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 192 )
+
+[node name="Marker31" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 192 )
+
+[node name="Marker30" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 192 )
+
+[node name="Marker29" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 192 )
+
+[node name="Marker28" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 192 )
+
+[node name="Marker27" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 192 )
+
+[node name="Marker26" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 192 )
+
+[node name="Marker25" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 192 )
+
+[node name="Marker40" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 256 )
+
+[node name="Marker39" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 256 )
+
+[node name="Marker38" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 256 )
+
+[node name="Marker37" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 256 )
+
+[node name="Marker36" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 256 )
+
+[node name="Marker35" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 256 )
+
+[node name="Marker34" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 256 )
+
+[node name="Marker33" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 256 )
+
+[node name="Marker48" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 320 )
+
+[node name="Marker47" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 320 )
+
+[node name="Marker46" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 320 )
+
+[node name="Marker45" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 320 )
+
+[node name="Marker44" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 320 )
+
+[node name="Marker43" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 320 )
+
+[node name="Marker42" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 320 )
+
+[node name="Marker41" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 320 )
+
+[node name="Marker56" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 384 )
+
+[node name="Marker55" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 384 )
+
+[node name="Marker54" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 384 )
+
+[node name="Marker53" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 384 )
+
+[node name="Marker52" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 384 )
+
+[node name="Marker51" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 384 )
+
+[node name="Marker50" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 384 )
+
+[node name="Marker49" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 384 )
+
+[node name="Marker64" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 0, 448 )
+
+[node name="Marker63" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 64, 448 )
+
+[node name="Marker62" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 128, 448 )
+
+[node name="Marker61" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 192, 448 )
+
+[node name="Marker60" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 256, 448 )
+
+[node name="Marker59" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 320, 448 )
+
+[node name="Marker58" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 384, 448 )
+
+[node name="Marker57" parent="MarkerController" instance=ExtResource( 4 )]
+position = Vector2( 448, 448 )
+
+[node name="BlackPlayer" type="Node2D" parent="." groups=[
+"black",
+]]
+position = Vector2( 32, 32 )
+
+[node name="BlackPawn" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 0, 64 )
+
+[node name="BlackPawn2" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 64, 64 )
+
+[node name="BlackPawn3" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 128, 64 )
+
+[node name="BlackPawn4" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 192, 64 )
+
+[node name="BlackPawn5" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 256, 64 )
+
+[node name="BlackPawn6" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 320, 64 )
+
+[node name="BlackPawn7" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 384, 64 )
+
+[node name="BlackPawn8" parent="BlackPlayer" instance=ExtResource( 1 )]
+position = Vector2( 448, 64 )
+
+[node name="BlackRook" parent="BlackPlayer" instance=ExtResource( 3 )]
+
+[node name="BlackRook1" parent="BlackPlayer" instance=ExtResource( 3 )]
+position = Vector2( 448, 0 )
+
+[node name="BlackKnight" parent="BlackPlayer" instance=ExtResource( 6 )]
+position = Vector2( 64, 0 )
+
+[node name="BlackKnight2" parent="BlackPlayer" instance=ExtResource( 6 )]
+position = Vector2( 384, 0 )
+
+[node name="BlackBishop" parent="BlackPlayer" instance=ExtResource( 7 )]
+position = Vector2( 128, 0 )
+
+[node name="BlackBishop2" parent="BlackPlayer" instance=ExtResource( 7 )]
+position = Vector2( 320, 0 )
+
+[node name="BlackBishop3" parent="BlackPlayer" instance=ExtResource( 8 )]
+position = Vector2( 256, 0 )
+
+[node name="BlackKing" parent="BlackPlayer" instance=ExtResource( 9 )]
+position = Vector2( 192, 0 )
+
+[node name="WhitePlayer" type="Node2D" parent="." groups=[
+"white",
+]]
+position = Vector2( 32, 32 )

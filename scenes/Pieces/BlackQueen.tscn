@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/chess/black_queen.png" type="Texture" id=1]
+[ext_resource path="res://scenes/Pieces/BasePiece.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/Queen.gd" type="Script" id=3]
+
+[node name="BlackQueen" type="Sprite" groups=[
+"black",
+]]
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="BasePiece" parent="." instance=ExtResource( 2 )]
+[connection signal="mouse_entered" from="BasePiece" to="BasePiece" method="_on_basepiece_mouse_entered"]
+[connection signal="mouse_exited" from="BasePiece" to="BasePiece" method="_on_basepiece_mouse_exited"]
